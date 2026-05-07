@@ -1690,19 +1690,19 @@ nav.scrolled {
 .contact-detail-value {
   font-size: 0.85rem; color: var(--navy);
 }
-.calendly-placeholder {
+.calendly {
   background: rgba(107,31,43,0.05);
   border: 1px solid rgba(107,31,43,0.12);
   border-left: 3px solid var(--maroon);
   padding: 1.8rem;
   margin-top: 1rem;
 }
-.calendly-placeholder h4 {
+.calendly h4 {
   font-size: 0.82rem; font-weight: 700;
   color: var(--maroon); margin-bottom: 0.4rem;
   text-transform: uppercase; letter-spacing: 0.08em;
 }
-.calendly-placeholder p {
+.calendly p {
   font-size: 0.78rem; color: var(--text-on-beige-muted);
   line-height: 1.65; margin: 0;
 }
@@ -2301,7 +2301,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="nav-logo"><img src="images/sb-icon-bg-logo.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
+        <div class="nav-logo"><img src="images/sb-logo-beige-horizontal.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
         <p data-i18n="footer_tagline">Enhancing Digital Systems — through specialized design and web application development that drives real business results.</p>
       </div>
       <div>
@@ -2430,7 +2430,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="nav-logo"><img src="images/sb-icon-bg-logo.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
+        <div class="nav-logo"><img src="images/sb-logo-beige-horizontal.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
         <p data-i18n="foot_short">Enhancing Digital Systems through specialized design and web application development.</p>
       </div>
       <div>
@@ -2817,7 +2817,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="nav-logo"><img src="images/sb-icon-bg-logo.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
+        <div class="nav-logo"><img src="images/sb-logo-beige-horizontal.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
         <p data-i18n="foot_min">Enhancing Digital Systems.</p>
       </div>
       <div>
@@ -2957,7 +2957,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="nav-logo"><img src="images/sb-icon-bg-logo.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;">
+        <div class="nav-logo"><img src="images/sb-logo-beige-horizontal.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;">
         </div>
         <p data-i18n="foot_min">Enhancing Digital Systems.</p>
       </div>
@@ -3034,9 +3034,10 @@ body { font-size: 0.95rem; line-height: 1.75;}
         </div>
       </div>
 
-      <div class="calendly-placeholder">
-        <h4 data-i18n="cp_cal_h">📅 Book a Free Consultation</h4>
-        <p data-i18n="cp_cal_p">Replace this block with your Calendly embed. Sign up free at calendly.com, create a 30-minute event type, and paste your embed code here. Clients will be able to book directly on your calendar.</p>
+      <div class="calendly">
+        <h4 data-i18n="cp_cal_h">📅 A Free Consultation</h4>
+         <p data-i18n="cp_cal_p"> Great projects start with great conversations. Schedule a free 30-minute consultation  either in person or online!</p>
+        <a href="https://calendly.com/twagirayezuadrien12/30min" target="_blank" data-i18n="book_btn">Book Now</a>
       </div>
     </div>
 
@@ -3094,7 +3095,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
   <footer>
     <div class="footer-main">
       <div class="footer-brand">
-        <div class="nav-logo"><img src="images/sb-icon-bg-logo.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
+        <div class="nav-logo"><img src="images/sb-logo-beige-horizontal.svg" alt="Smart &amp; Beyond" style="height:32px;width:auto;display:block;"></div>
         <p  data-i18n="foot_min">Enhancing Digital Systems.</p>
       </div>
       <div>
@@ -3684,15 +3685,15 @@ const translations = {
     cp_intro:'We\'re not a contact form company. We\'re a team that genuinely wants to understand your challenge before suggesting a solution. Start with a consultation — it\'s free, it\'s focused, and it\'ll tell you exactly what\'s possible.',
     cp_lbl_email:'Email', cp_lbl_loc:'Location', cp_val_loc:'Kigali, Rwanda',
     cp_lbl_res:'Response Time', cp_val_res:'Within 1 business day',
-    cp_cal_h:'📅 Book a Free Consultation',
-    cp_cal_p:'Replace this block with your Calendly embed. Sign up free at calendly.com, create a 30-minute event type, and paste your embed code here. Clients will be able to book directly on your calendar.',
+    cp_cal_h:'📅 A Free Consultation',
+    cp_cal_p:'Great projects start with great conversations. Schedule a free 30-minute consultation  either in person or online!',
     cp_form_tag:'Send a Message',
     cf_fname:'First Name *', cf_lname:'Last Name *', cf_email:'Email Address *',
     cf_company:'Company / Organisation', cf_service:'Service Interested In *',
     cf_project:'Tell Us About Your Project *', cf_budget:'Budget Range',
     cf_note:'* Required fields. By submitting this form you agree to be contacted about your enquiry. We never share your details with third parties.',
     cf_send:'Send Message ↗',
-    contact_srvs:'Select a service...', contact_bid:'Brand Identity & Design', contact_wad:'Web Application Development', contact_bdd:'Both Design & Development', contact_not:'Not sure yet — need advice',
+    contact_srvs:'Select a service...', contact_bid:'Brand Identity & Design', contact_wad:'Web Application Development', contact_bdd:'Both Design & Development', contact_not:'Not sure yet — need advice', book_btn:'Book Now',
     foot_pref:'Prefer not to say', foot_prefone:'Under RWF500,000',
     lang_label:'Language',
     ticker: [ 'Brand Identity', 'Web Applications', 'UI/UX Design', 'Digital Strategy', 'Corporate Design', 'Custom Development', 'Visual Systems', 'Enhancing Digital Systems' ], 
@@ -3949,8 +3950,8 @@ home_svc_h2_em:'s’exprime.',
   cp_lbl_res:'Délai de réponse', 
   cp_val_res:'Sous un jour ouvrable', 
  
-  cp_cal_h:'📅 Réserver une consultation gratuite', 
-  cp_cal_p:'Remplacez ce bloc par votre intégration Calendly. Créez un événement de 30minutes et collez ici votre code.', 
+  cp_cal_h:'📅 Une consultation gratuite', 
+  cp_cal_p:'Les grands projets commencent par des grandes conversations. Planifiez une consultation gratuitede 30 minutes, en présentiel ou en ligne!', 
  
   cp_form_tag:'Envoyer un message', 
  
@@ -3970,6 +3971,7 @@ home_svc_h2_em:'s’exprime.',
   contact_wad:'Développement d’applications web', 
   contact_bdd:'Design et développement', 
   contact_not:'Pas encore décidé — besoin de conseils', 
+  book_btn:'Réserver maintenant',
  
   foot_pref:'Préfère ne pas répondre', 
   foot_prefone:'Moins de 500 000 RWF',
@@ -4152,8 +4154,9 @@ filt_all:'Zote', filt_design:'Ubunifu', filt_web:'Maendeleo ya wavuti',
   cp_lbl_email:'Barua pepe', cp_lbl_loc:'Mahali', cp_val_loc:'Kigali, Rwanda', 
   cp_lbl_res:'Muda wa majibu', cp_val_res:'Ndani ya siku 1 ya kazi', 
  
-  cp_cal_h:'📅Panga Ushauri wa Bure', 
-  cp_cal_p:'Badilisha sehemu hii kwa kuingiza Calendly yako.', 
+  cp_cal_h:'📅Ushauri wa Bure', 
+  cp_cal_p:'Miradi mikubwa huanza na mazungumzo mazuri. Panga kikao cha bure cha dakika 30 ana kwa ana au mtandaoni!',
+  book_btn:'Weka na fasi sasa',
  
   cp_form_tag:'Tuma ujumbe', 
  
@@ -4166,7 +4169,7 @@ filt_all:'Zote', filt_design:'Ubunifu', filt_web:'Maendeleo ya wavuti',
  
   contact_srvs:'Chagua huduma...', contact_bid:'Utambulisho wa chapa na ubunifu', 
   contact_wad:'Utengenezaji wa programu za wavuti', contact_bdd:'Ubunifu na maendeleo', 
-  contact_not:'Bado hujaamua — unahitaji ushauri', 
+  contact_not:'Bado hujaamua — unahitaji ushauri',
  
   foot_pref:'Napendelea kutosema', foot_prefone:'Chini ya RWF500,000', 
  
@@ -4418,8 +4421,9 @@ filt_all:'Zote', filt_design:'Ubunifu', filt_web:'Maendeleo ya wavuti',
     cp_val_loc:'Kigali, Rwanda', 
     cp_lbl_res:'Igihe cyo gusubiza',  
     cp_val_res:'Mu munsi umwe w’akazi', 
-    cp_cal_h:'📅 Teganya ikiganiro ku buntu', 
-    cp_cal_p:'Hindura aha ushyiremo uburyo bwawe bwo guteganya igihe (Calendly embed). Iyandikishe ku buntu kuri calendly.com, ukore ubwoko bw’ikorwa ry’iminota 30, hanyuma ushyire hano kode yabyo. Abakiliya bazashobora guteganya igihe ku ngengabihe yawe.', 
+    cp_cal_h:'📅 Ikiganiro ku buntu', 
+    cp_cal_p:'Imishinga myiza itangirana n’ibiganiro byiza. Teganya Inama k’ubuntu y’iminota 30, imbonankubone cyangwa kuri murandasi!', 
+    book_btn:'Bika umwanya nonaha',
     cp_form_tag:'Ohereza ubutumwa', 
     cf_fname:'Izina rya mbere *',  
     cf_lname:'Izina ry’umuryango *',  
