@@ -3043,7 +3043,7 @@ body { font-size: 0.95rem; line-height: 1.75;}
 
     <div class="reveal reveal-delay-1">
       <div class="section-tag" style="margin-bottom:1.5rem;" data-i18n="cp_form_tag">Send a Message</div>
-      <form class="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field">
+      <form class="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success">
         <!-- Honeypot field (hidden) to prevent spam -->
         <input type="hidden" name="bot-field" />
         
@@ -3147,6 +3147,16 @@ function showPage(pageId) {
   });
   window.scrollTo({ top: 0, behavior: 'smooth' });
   setTimeout(initReveal, 100);
+}
+
+// ── NETLIFY FORM HANDLER ──
+// Handle form submission with Netlify Forms
+const contactForm = document.querySelector('form[name="contact"]');
+if (contactForm) {
+  contactForm.addEventListener('submit', function(e) {
+    // Let Netlify handle the submission, but prepare for redirect
+    // After submission, we'll redirect to success page
+  });
 }
 
 // ── CUSTOM CURSOR ──
@@ -4659,5 +4669,18 @@ setLanguage(currentLang);
 //initial tickerRender
 renderTicker();                                                                 
 </script>
+
+<!-- ════════════════════════════════════
+     SUCCESS PAGE
+════════════════════════════════════ -->
+<div class="page" id="page-success" style="display:flex;align-items:center;justify-content:center;">
+  <div style="text-align:center;padding:2rem;max-width:600px;">
+    <div style="font-size:4rem;margin-bottom:1.5rem;">✓</div>
+    <h1 style="font-size:2.5rem;color:var(--navy);margin-bottom:1rem;">Message Received!</h1>
+    <p style="font-size:1.1rem;color:var(--text-on-beige-muted);margin-bottom:2rem;">Thank you for reaching out. We've received your message and will respond within one business day.</p>
+    <button class="btn-primary" onclick="showPage('home')" style="margin-bottom:1rem;">Back to Home</button>
+  </div>
+</div>
+
 </body>
 </html>
