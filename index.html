@@ -3044,6 +3044,8 @@ body { font-size: 0.95rem; line-height: 1.75;}
     <div class="reveal reveal-delay-1">
       <div class="section-tag" style="margin-bottom:1.5rem;" data-i18n="cp_form_tag">Send a Message</div>
       <form class="contact-form" name="contact" method="POST" netlify netlify-honeypot="bot-field" action="/success">
+        <!-- Hidden field: tells Netlify to send form submissions to your email -->
+        <input type="hidden" name="_to" value="twagirayezuadrien12@gmail.com" />
         <!-- Honeypot field (hidden) to prevent spam -->
         <input type="hidden" name="bot-field" />
         
